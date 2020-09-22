@@ -1,0 +1,41 @@
+flyway:
+    url: jdbc:postgresql://platformbuilders.cuhpisegsyw4.us-east-1.rds.amazonaws.com:5432/pb?currentSchema=s_customers
+    createSchemas: false
+    schemas: s_customers
+
+spring:
+    database:
+        driverClassName: org.postgresql.Driver
+    datasource:
+        url: jdbc:postgresql://platformbuilders.cuhpisegsyw4.us-east-1.rds.amazonaws.com:5432/pb?currentSchema=s_customers
+        username: customer-api
+        password: 3wgcg6K-P+
+    application:
+        name: customers-api
+    jpa:
+        hibernate:
+            ddl-auto: none        
+
+server:
+    servlet:
+        contextPath: /customers-api  
+        
+logging:
+    level:
+        root: INFO    
+        org:
+            hibernate:
+                type:
+                    descriptor:
+                        sql: FATAL
+
+info:
+    app:
+        name: "@project.name@"
+        description: "@project.description@"
+        version: "@project.version@"
+        encoding: "@project.build.sourceEncoding@"
+        java:
+            version: "@java.version@"   
+        group-id: "@project.groupId@"
+        artifact-id: "@project.artifactId@"
