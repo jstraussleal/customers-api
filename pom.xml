@@ -10,9 +10,9 @@
 	</parent>
 	<groupId>br.com.jstrauss.platformbuilders</groupId>
 	<artifactId>customers</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>1.0.0</version>
 	<name>customers</name>
-	<description>project about clients for evaluation at PLatform builders</description>
+	<description>project about clients for evaluation at Platform builders</description>
 
 	<properties>
 		<java.version>11</java.version>
